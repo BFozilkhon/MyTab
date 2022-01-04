@@ -1,12 +1,15 @@
 import styled from 'styled-components';
-import team from '../../assets/imgs/team.png';
-import person from '../../assets/imgs/person.png';
 
 export const Img = styled.div`
-  background-image: url(${team});
-  background-size: 100% 100%;
-  height: 150vh;
+  background: linear-gradient(198.06deg, #2382f2 20.9%, #4659ff 88.7%);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 100px 0px;
+  margin: 150px 0px;
 `;
 
 export const Title = styled.div`
@@ -15,7 +18,7 @@ export const Title = styled.div`
   font-size: 64px;
   text-align: center;
   text-transform: uppercase;
-
+  margin-bottom: 20px;
   color: #ffffff;
 `;
 
@@ -26,27 +29,13 @@ export const Text = styled.div`
   text-align: center;
   color: #ffffff;
   width: 40%;
+  margin-bottom: 70px;
 `;
 
-export const Card = styled.div`
-  background: #ffffff;
-  width: 80%;
-  box-sizing: border-box;
-  margin: auto;
-  height: 700px;
-  box-shadow: 0px 18px 60px rgba(61, 70, 118, 0.1);
-  border-radius: 60px;
-  padding: 50px;
-  display: flex;
-`;
-
-export const Box = styled.div`
-  flex: ${({ small }) => (small ? '2' : '3')};
-`;
-
-export const Person = styled.div`
-  background-image: url(${person});
-  background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
+export const Wrapper = styled.div`
+  margin: 0px auto;
+  width: 88%;
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
 `;

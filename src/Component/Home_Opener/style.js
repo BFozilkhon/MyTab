@@ -12,6 +12,22 @@ export const Title = styled.div`
   margin: auto;
   margin-top: 160px;
   text-transform: uppercase;
+  @media (max-width: 1840px) {
+    font-size: 60px;
+  }
+  @media (max-width: 1580px) {
+    font-size: 53px;
+    line-height: 67px;
+    width: 65%;
+    margin-top: 100px;
+  }
+  @media (max-width: 1300px) {
+    font-size: 40px;
+    line-height: 58px;
+    width: 63%;
+
+    margin-top: 60px;
+  }
 `;
 
 export const Item = styled.div`
@@ -24,6 +40,28 @@ export const Item = styled.div`
   width: 35%;
   margin: auto;
   margin-top: 30px;
+  @media (max-width: 1600px) {
+    font-size: 19px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 20px;
+    width: 40%;
+  }
+  /* @media (max-width: 1580px) {
+    font-size: 53px;
+    line-height: 67px;
+    width: 65%;
+    margin-top: 100px;
+  }
+  @media (max-width: 1300px) {
+    font-size: 40px;
+    line-height: 58px;
+    width: 63%;
+
+    margin-top: 60px;
+  } */
 `;
 
 export const Btn = styled.div`
@@ -41,6 +79,7 @@ export const Btn = styled.div`
   margin-top: 30px;
   padding-left: 30px;
   text-transform: uppercase;
+  cursor: pointer;
 `;
 
 export const Circle = styled.div`

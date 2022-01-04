@@ -4,13 +4,23 @@ export const Container = styled.div`
   display: flex;
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  @media (max-width: 1200px) {
+    display: block;
+  }
 `;
 
 export const Box = styled.div`
   flex: ${({ small }) => (small ? '2' : '3')};
   display: ${({ large }) => large && 'flex'};
   flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: ${({ large }) => !large && 'column'};
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Title = styled.div`

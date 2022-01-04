@@ -4,7 +4,7 @@ import { Box, Container, Title, Item } from './style';
 
 export const Info = () => {
   return (
-    <Container>
+    <Container id='2'>
       <Box small>
         <Title>Наша компания</Title>
         <Item>

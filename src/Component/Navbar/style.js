@@ -10,7 +10,8 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const Title = styled.div`
+export const Title = styled.a`
+  text-decoration: none;
   font-size: 50px;
   font-weight: 900;
   color: white;
@@ -21,6 +22,9 @@ export const Nav = styled.div`
   align-items: center;
   width: 70%;
   justify-content: space-around;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const Item = styled.a`

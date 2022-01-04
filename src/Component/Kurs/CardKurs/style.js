@@ -8,14 +8,19 @@ export const Container = styled.div`
   height: 440px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   padding-bottom: 30px;
   box-sizing: border-box;
+  @media (max-width: 1250px) {
+    width: 400px;
+    margin: 20px 20px;
+  }
 `;
 
 export const Img = styled.img`
   height: 50%;
   width: 50%;
-  margin: auto;
 `;
 
 export const Title = styled.div`
@@ -24,7 +29,13 @@ export const Title = styled.div`
   font-size: 30px;
   line-height: 35px;
   width: 60%;
-  margin: auto;
   text-align: center;
   color: #222a3f;
+  @media (max-width: 1630px) {
+    font-size: 26px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 `;

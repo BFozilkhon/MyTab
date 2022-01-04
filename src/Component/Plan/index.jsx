@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   Box,
   Container,
@@ -9,11 +9,21 @@ import {
   Flexing,
   Tick,
   Item,
+  Btn,
+  Circle,
+  Arrow,
 } from './style';
+import { FozilInfo } from '../../Context/context';
 
 export const Plan = () => {
+  const [active, setActive] = useContext(FozilInfo);
+
+  const getCheck = () => {
+    setActive(!active);
+  };
+
   return (
-    <Wrapper>
+    <Wrapper id='4'>
       <Header>информация о курсе</Header>
       <Title>Python программирование</Title>
       <Container>
@@ -35,7 +45,7 @@ export const Plan = () => {
           </Text>
           <Title>Цена: 750 000 сум/мес</Title>
         </Box>
-        <Box>
+        <Box toping>
           <Flexing>
             <Tick />
             <Item>Nisl arcu sagittis</Item>
@@ -62,10 +72,16 @@ export const Plan = () => {
           </Flexing>
           <Flexing>
             <Tick />
-            <Item>Diam ipsum mollis sit ac faucibus porttitor</Item>
+            <Item>Nisl arcu sagittis</Item>
           </Flexing>
+          <Btn onClick={getCheck}>
+            Запись на курсы
+            <Circle>
+              <Arrow />
+            </Circle>
+          </Btn>
         </Box>
-        <Box>
+        <Box toping>
           <Flexing>
             <Tick />
             <Item>Nisl arcu sagittis</Item>

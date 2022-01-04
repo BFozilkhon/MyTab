@@ -15,8 +15,8 @@ export const Conatiner = styled.div`
 
 export const Polygon = styled.div`
   clip-path: polygon(50% 0%, 100% 23%, 100% 73%, 51% 100%, 0 72%, 0 23%);
-  width: 180px;
-  height: 200px;
+  width: 50%;
+  height: 43%;
   background: #f1f6fe;
   border-radius: 10px;
 `;
@@ -24,9 +24,18 @@ export const Polygon = styled.div`
 export const Item = styled.div`
   font-style: normal;
   font-weight: 900;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.4rem;
+  line-height: 25px;
   color: #222a3f;
   width: 60%;
   text-align: center;
+  @media (max-width: 1650px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 1400px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
 `;

@@ -1,21 +1,27 @@
 import styled from 'styled-components';
 import kurs from '../../assets/imgs/kurs.png';
 
-export const Img = styled.div`
-  background-image: url(${kurs});
-  background-size: 100% 100%;
-  height: 180vh;
+export const Container = styled.div`
   width: 100%;
+  background: linear-gradient(198.06deg, #2382f2 20.9%, #4659ff 88.7%);
   display: flex;
   align-items: center;
+  margin-top: 100px;
+  height: 100%;
+  padding: 100px 0px;
 `;
 
 export const Wrapper = styled.div`
   width: 80%;
-  margin: auto;
-  height: 200px;
+  margin: 0px auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1250px) {
+    justify-content: center;
+  }
 `;
 
 export const Title = styled.div`
